@@ -86,5 +86,5 @@ def generate_launch_description():
 
     return LaunchDescription([
         DeclareLaunchArgument('rviz', default_value='true'),
-        gazebo, robot_state_publisher, spawn, bridge, rviz_node,   # TODO: agregar cinematica
+        gazebo, robot_state_publisher, spawn, bridge, cinematica, rviz_node,
     ])
