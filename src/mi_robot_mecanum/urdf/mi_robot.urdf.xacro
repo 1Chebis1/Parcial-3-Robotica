@@ -64,7 +64,7 @@
         <geometry><sphere radius="${rueda_radio}"/></geometry>
       </collision>
       <inertial>
-      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+      <origin xyz="0 0 0.02" rpy="${pi/2} 0 0"/>
       <mass value="${rueda_masa}"/>
       <xacro:inercia_cilindro m="${rueda_masa}" r="${rueda_radio}" h="${rueda_ancho}"/>
     </inertial>
@@ -72,7 +72,7 @@
     <joint name="joint_rueda${prefijo}" type="continous">
       <parent link="base_link"/>
       <child link="rueda_${prefijo}"/>
-      <origin xyz="x_signo*lx, y_signo*ly, 0" rpy="-3.14/2 0 0"/>
+      <origin xyz="${x_signo*lx}, ${y_signo*ly}, 0" rpy="${pi/2} 0 0"/>
     </joint>
 
   </xacro:macro>
