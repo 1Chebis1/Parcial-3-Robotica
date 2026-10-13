@@ -68,7 +68,7 @@ def generate_launch_description():
             '/camara/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
             '/camara/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
         ],
-        remappings=[('/world/pista/model/mi_robot/joint_state', '/joint_states')],x
+        remappings=[('/world/pista/model/mi_robot/joint_state', '/joint_states')],
         parameters=[{'use_sim_time': True}],
         output='screen',
     )
